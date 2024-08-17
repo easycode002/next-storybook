@@ -36,7 +36,7 @@ const Login_V2 = () => {
               noValidate
               className="flex flex-col justify-center items-center"
             >
-              <span className="font-bold text-2xl mb-2">Register</span>
+              <span className="font-bold text-2xl mb-2">Login</span>
               <div className="flex flex-col w-full px-10 gap-2">
                 <div className="h-[60px]">
                   <input
@@ -69,7 +69,7 @@ const Login_V2 = () => {
                   </p>
                 </div>
                 <button type="submit" className="bg-indigo-500 p-2 rounded-md text-white font-bold">
-                  Sign Up
+                  Sign In
                 </button>
               </div>
             </form>

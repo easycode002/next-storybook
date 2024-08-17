@@ -3,7 +3,7 @@ import Button, { ButtonProps } from "./Button";
 import { FiCoffee } from "react-icons/fi";
 import { expect, userEvent, within } from "@storybook/test";
 const meta: Meta<typeof Button> = {
-  title: "Button",
+  title: "Atoms/Button",
   component: Button,
   tags: ["autodocs"],
   parameters: {
@@ -49,11 +49,11 @@ export const IconOnly: StoryObj<ButtonProps> = {
     isIconOnly: true,
     startContent: <FiCoffee />,
   },
-  play:async({canvasElement})=>{
+  play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const button = canvas.getByRole('button')
-    expect(button).toContainElement(canvas.getByTestId('icon'));
-  }
+    const button = canvas.getByRole("button");
+    expect(button).toContainElement(canvas.getByTestId("icon"));
+  },
 };
 
 export const Disabled: StoryObj<ButtonProps> = {

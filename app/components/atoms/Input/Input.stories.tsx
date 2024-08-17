@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Input, { InputProps } from "./Input";
 import { userEvent, waitFor, within, expect, fn } from "@storybook/test";
 const meta: Meta<typeof Input> = {
-  title: "Input",
+  title: "Atoms/Input",
   component: Input,
   tags: ["autodocs"],
   parameters: {
