@@ -2,6 +2,7 @@
 import { useState } from "react";
 import ToggleButton from "./components/atoms/Button/ToggleButton";
 import { FiMoon, FiSun } from "react-icons/fi";
+import HamburgerButton from "./components/atoms/Button/HamburgerButton";
 export default function Home() {
   const [selected, setSelected] = useState<string>("light");
 
@@ -33,6 +34,7 @@ export default function Home() {
             stiffness: 250,
           }}
         />
+        <HamburgerButton/>
       </div>
     </>
   );
