@@ -80,10 +80,17 @@ yarn test-storybook --coverage
 
 </details>
 
-
-
-
 Mocking network request
+
 ```bash
 yarn add msw msw-storybook-addon --save-dev
 ```
+
+{
+"$schema": "https://openapi.vercel.sh/vercel.json",
+"buildCommand": "yarn run build-storybook",
+"devCommand": "yarn run storybook",
+"installCommand": "yarn install",
+"framework": null,
+"outputDirectory": "./storybook-static"
+}
